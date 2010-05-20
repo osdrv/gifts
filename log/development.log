@@ -1058,3 +1058,1737 @@ Rendering title/index
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
 Rendered users/_user_bar (18.2ms)
 Completed in 23ms (View: 19, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:52:21) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.0ms)
+Completed in 29ms (View: 24, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:52:54) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.5ms)
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:53:03) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.1ms)
+Completed in 21ms (View: 17, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:53:04) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (15.9ms)
+Completed in 21ms (View: 17, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:54:02) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.5ms)
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:54:15) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.7ms)
+
+ActionView::TemplateError (undefined method `javascript_link_tag' for #<ActionView::Base:0xb6007074>) on line #9 of app/views/layouts/application.html.erb:
+6: <head>
+7: 	<title><%= @page_title or 'Page Title' %></title>
+8: 	<%= stylesheet_link_tag 'style'  %>
+9: 	<%= javascript_link_tag 'jq/jquery.js'  %> 
+10: </head>
+11: 
+12: <body>
+
+    app/views/layouts/application.html.erb:9
+
+Rendered rescues/_trace (59.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:55:17) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (15.9ms)
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-20 23:55:37) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.5ms)
+Completed in 29ms (View: 25, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:01:47) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.7ms)
+Rendered title/_find_user (0.8ms)
+Completed in 41ms (View: 36, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:01:48) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.6ms)
+Rendered title/_find_user (0.2ms)
+Completed in 23ms (View: 19, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:03:50) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.1ms)
+ERROR: compiling _run_erb_app47views47title47_find_user46html46erb_locals_find_user_object RAISED compile error
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:1: syntax error, unexpected ')'
+            old_output_buffer = output_buffer;find_user = local_assigns[:find_user];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( form_tag do ).to_s); @output_buffer.concat "\n"
+                                                                                                                                                                                                         ^
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:3: syntax error, unexpected kEND
+@output_buffer.concat(( end ).to_s); @output_buffer
+                           ^
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:6: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47title47_find_user46html46erb_locals_find_user_object(local_assigns)
+            old_output_buffer = output_buffer;find_user = local_assigns[:find_user];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( form_tag do ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat(( end ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:6:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/oleg/workspace/gift.me/app/views/title/index.html.erb:3:in `_run_erb_app47views47title47index46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:1: syntax error, unexpected ')'
+            old_output_buffer = output_buffer;find_user = local_assigns[:find_user];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( form_tag do ).to_s); @output_buffer.concat "\n"
+                                                                                                                                                                                                         ^
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:3: syntax error, unexpected kEND
+@output_buffer.concat(( end ).to_s); @output_buffer
+                           ^
+/home/oleg/workspace/gift.me/app/views/title/_find_user.html.erb:6: syntax error, unexpected $end, expecting ')') on line #1 of app/views/title/_find_user.html.erb:
+1: <%= form_tag do %>
+2:   
+3: <%= end %>
+
+    app/views/title/_find_user.html.erb:6:in `compile!'
+    app/views/title/index.html.erb:3
+
+Rendered rescues/_trace (68.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:04:07) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (18.0ms)
+Rendered title/_find_user (2.8ms)
+Completed in 33ms (View: 29, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:20:03) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.3ms)
+
+ActionView::TemplateError (undefined local variable or method `search' for #<ActionView::Base:0xb5f429cc>) on line #1 of app/views/title/_find_user.html.erb:
+1: <% form_tag(search) do %>
+2:   
+3: <% end %>
+
+    app/views/title/_find_user.html.erb:1
+    app/views/title/index.html.erb:3
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:20:29) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.8ms)
+Rendered title/_find_user (2.2ms)
+Completed in 32ms (View: 28, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:20:44) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.6ms)
+Rendered title/_find_user (2.2ms)
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:24:14) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (15.9ms)
+Rendered title/_find_user (2.8ms)
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:24:20) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (15.8ms)
+Rendered title/_find_user (2.8ms)
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#search (for 192.168.1.5 at 2010-05-21 00:24:25) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"ie2VUsVeTYzLi+FP9ih8/Ckp53tg/kH4crikLBbSRLE=", "q"=>"4зсик"}
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (147.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#search (for 192.168.1.5 at 2010-05-21 00:24:30) [POST]
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"ie2VUsVeTYzLi+FP9ih8/Ckp53tg/kH4crikLBbSRLE=", "q"=>"4pcbr"}
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:24:47) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.0ms)
+Rendered title/_find_user (2.2ms)
+Completed in 29ms (View: 25, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#search (for 192.168.1.5 at 2010-05-21 00:24:55) [GET]
+  Parameters: {"commit"=>"Search!", "q"=>"4pcbr"}
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:25:25) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (18.5ms)
+Rendered title/_find_user (2.3ms)
+Completed in 34ms (View: 29, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#search (for 192.168.1.5 at 2010-05-21 00:25:32) [GET]
+  Parameters: {"q"=>""}
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:25:44) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (16.3ms)
+Rendered title/_find_user (2.1ms)
+Completed in 30ms (View: 25, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#search (for 192.168.1.5 at 2010-05-21 00:25:53) [GET]
+  Parameters: {"q"=>"4pcbr"}
+
+NameError (uninitialized constant UserController):
+  
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:26:15) [GET]
+  Parameters: {"q"=>"4pcbr"}
+
+ArgumentError (Unknown key(s): conditiions):
+  app/controllers/users_controller.rb:36:in `search'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:27:02) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '4pcbr'%' OR name LIKE '%'4pcbr'%')' at line 1: SELECT * FROM `users` WHERE (login LIKE '%'4pcbr'%' OR name LIKE '%'4pcbr'%') [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '4pcbr'%' OR name LIKE '%'4pcbr'%')' at line 1: SELECT * FROM `users` WHERE (login LIKE '%'4pcbr'%' OR name LIKE '%'4pcbr'%') ):
+  app/controllers/users_controller.rb:36:in `search'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:28:15) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:29:00) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:29:46) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:33:16) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:34:23) [GET]
+  Parameters: {"q"=>"4pcbr'"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr\'%' OR name LIKE '%4pcbr\'%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://gift.me/search?q=4pcbr%27]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:34:30) [GET]
+  Parameters: {"q"=>"4pcb"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcb%' OR name LIKE '%4pcb%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 20ms (View: 6, DB: 2) | 200 OK [http://gift.me/search?q=4pcb]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:34:34) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 6, DB: 1) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:34:51) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 25ms (View: 12, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:34:55) [GET]
+  Parameters: {"q"=>"4pcbr'"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr\'%' OR name LIKE '%4pcbr\'%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://gift.me/search?q=4pcbr%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:35:09) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 26ms (View: 13, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:37:40) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:37:41) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 6, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:37:44) [GET]
+  Parameters: {"q"=>"4pcbr'"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr\'%' OR name LIKE '%4pcbr\'%') [0m
+Rendering template within layouts/application
+Rendering users/search
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://gift.me/search?q=4pcbr%27]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 00:38:12) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 26ms (View: 13, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:38:14) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, new, and search):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:41:06) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, new, and search):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:42:18) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionView::MissingTemplate (Missing template users/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:42:19) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionView::MissingTemplate (Missing template users/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:42:44) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:43:05) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:44:06) [GET]
+  Parameters: {"id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:43:in `show'
+
+Rendered rescues/_trace (158.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:44:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 3, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:44:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+NoMethodError (undefined method `empty?' for #<User:0xb5f54d84>):
+  app/controllers/users_controller.rb:44:in `show'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:44:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 2, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:44:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 18ms (View: 3, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 3, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 3, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 3, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 2, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 16ms (View: 2, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:45:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 22ms (View: 8, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:46:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:46:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:46:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:46:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:49:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 43ms (View: 11, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:49:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:49:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 123ms (View: 5, DB: 2) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:54:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 52ms (View: 13, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:54:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 27ms (View: 6, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:54:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 33ms (View: 13, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 00:58:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 33ms (View: 13, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 00:58:55) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.0ms)
+Rendered title/_find_user (2.2ms)
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:04:45) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (19.4ms)
+Rendered title/_find_user (2.6ms)
+Completed in 43ms (View: 38, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:05:07) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.9ms)
+Rendered title/_find_user (3.3ms)
+Completed in 33ms (View: 29, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:05:19) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.2ms)
+Rendered title/_find_user (2.6ms)
+Completed in 32ms (View: 27, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:10:28) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.0ms)
+Rendered title/_find_user (2.8ms)
+Completed in 31ms (View: 27, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:10:43) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (127.8ms)
+Rendered title/_find_user (1.3ms)
+Completed in 136ms (View: 132, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:10:48) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:11:23) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.9ms)
+Rendered title/_find_user (1.2ms)
+Completed in 26ms (View: 22, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:11:27) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 21ms (View: 7, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:14:08) [GET]
+  Parameters: {"q"=>"4pcbr"}
+
+ActionView::MissingTemplate (Missing template users/text.erb in view path app/views):
+  app/controllers/users_controller.rb:35:in `search'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:14:32) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.3ms)
+Rendered title/_find_user (1.2ms)
+Completed in 25ms (View: 21, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:14:34) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:15:41) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering template within layouts/application
+Rendering users/search
+
+ActionView::TemplateError (undefined method `include?' for :text:Symbol) on line #1 of app/views/users/search.html.erb:
+1: <% render :text %>
+2: <% if @users.empty? %>
+3:   No users found
+4: <% else %>
+
+    app/views/users/search.html.erb:1
+
+Rendered rescues/_trace (63.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:18:43) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.0ms)
+Rendered title/_find_user (1.2ms)
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:18:48) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering users/search
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:19:00) [GET]
+  Parameters: {"q"=>"4pcbr'"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (login LIKE '%4pcbr\'%' OR name LIKE '%4pcbr\'%') [0m
+Rendering users/search
+Completed in 13ms (View: 1, DB: 1) | 200 OK [http://gift.me/search?q=4pcbr%27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:19:03) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering users/search
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 20ms (View: 5, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:19:10) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering users/search
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:19:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 34ms (View: 13, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:20:50) [GET]
+Rendering template within layouts/application
+Rendering title/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.3ms)
+Rendered title/_find_user (1.3ms)
+Completed in 25ms (View: 21, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:20:55) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering users/search
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:20:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Completed in 27ms (View: 7, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:22:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (3.0ms)
+Completed in 41ms (View: 18, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:22:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (2.9ms)
+Completed in 31ms (View: 10, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TitleController#index (for 192.168.1.10 at 2010-05-21 01:24:49) [GET]
+Rendering template within layouts/application
+Rendering title/index
+Rendered title/_find_user (1.2ms)
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered users/_user_bar (17.5ms)
+Completed in 38ms (View: 34, DB: 2) | 200 OK [http://192.168.1.10/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 192.168.1.5 at 2010-05-21 01:24:50) [GET]
+  Parameters: {"q"=>"4pcbr"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (login LIKE '%4pcbr%' OR name LIKE '%4pcbr%') [0m
+Rendering users/search
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://gift.me/search?q=4pcbr]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:24:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_owner?' for #<Class:0xb5e67fc0>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (162.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:24:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_owner?' for #<Class:0xb5fcc1cc>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:24:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_owner?' for #<Class:0xb5eb7070>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5dccbd8>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5f2b18c>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5e46f8c>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (170.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5fe8304>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5ec8fdc>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5de0188>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (169.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:32:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+
+NoMethodError (undefined method `is_me?' for #<Class:0xb5f3e8e0>):
+  app/controllers/users_controller.rb:49:in `show'
+
+Rendered rescues/_trace (48.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:33:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 36ms (View: 14, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:33:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+
+ActionView::TemplateError (undefined method `empty?' for #<User:0xb5dda5a8>) on line #13 of app/views/users/show.html.erb:
+10:   </ul>
+11: <% end %>
+12: 
+13: <%= @me.empty? %>
+
+    app/views/users/show.html.erb:13
+
+Rendered rescues/_trace (63.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:33:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 37ms (View: 15, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:33:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 36ms (View: 15, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:36:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 36ms (View: 14, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:36:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 33ms (View: 9, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:37:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_user_bar (1.0ms)
+Completed in 38ms (View: 15, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:44:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (4.4ms)
+
+ActionView::TemplateError (undefined method `add_wish_path' for #<ActionView::Base:0xb5f1eb08>) on line #1 of app/views/users/_add_wish.html.erb:
+1: <% form_tag(:add_wish, :method => "POST", :id => "add_wish_form") do %>
+2:   <%= label_tag(:i, "Add a new item to list:") %>
+3:   <%= text_field_tag(:i) %>
+4:   <%= submit_tag("( + )", :name => nil) %>
+
+    app/views/users/_add_wish.html.erb:1
+    app/views/users/show.html.erb:6
+
+Rendered rescues/_trace (199.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:46:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (2.9ms)
+
+ActionView::TemplateError (undefined method `add_wish_path' for #<ActionView::Base:0xb5f10c4c>) on line #1 of app/views/users/_add_wish.html.erb:
+1: <% form_tag(:add_wish, :method => "POST", :id => "add_wish_form") do %>
+2:   <%= label_tag(:i, "Add a new item to list:") %>
+3:   <%= text_field_tag(:i) %>
+4:   <%= submit_tag("( + )", :name => nil) %>
+
+    app/views/users/_add_wish.html.erb:1
+    app/views/users/show.html.erb:6
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:46:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (2.9ms)
+
+ActionView::TemplateError (undefined method `add_wish_path' for #<ActionView::Base:0xb600704c>) on line #1 of app/views/users/_add_wish.html.erb:
+1: <% form_tag(:add_wish, :method => "POST", :id => "add_wish_form") do %>
+2:   <%= label_tag(:i, "Add a new item to list:") %>
+3:   <%= text_field_tag(:i) %>
+4:   <%= submit_tag("( + )", :name => nil) %>
+
+    app/views/users/_add_wish.html.erb:1
+    app/views/users/show.html.erb:6
+
+Rendered rescues/_trace (78.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:46:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (2.8ms)
+
+ActionView::TemplateError (undefined method `add_wish_path' for #<ActionView::Base:0xb5e352a0>) on line #1 of app/views/users/_add_wish.html.erb:
+1: <% form_tag(:add_wish, :method => "POST", :id => "add_wish_form") do %>
+2:   <%= label_tag(:i, "Add a new item to list:") %>
+3:   <%= text_field_tag(:i) %>
+4:   <%= submit_tag("( + )", :name => nil) %>
+
+    app/views/users/_add_wish.html.erb:1
+    app/views/users/show.html.erb:6
+
+Rendered rescues/_trace (201.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:47:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (2.8ms)
+Rendered users/_add_wish (1.8ms)
+Rendered users/_user_bar (1.0ms)
+Completed in 32ms (View: 11, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:47:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mGift Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `gifts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (2.8ms)
+Rendered users/_add_wish (3.2ms)
+Rendered users/_user_bar (1.0ms)
+Completed in 39ms (View: 17, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add_wish (for 192.168.1.5 at 2010-05-21 01:47:29) [POST]
+  Parameters: {"authenticity_token"=>"ie2VUsVeTYzLi+FP9ih8/Ckp53tg/kH4crikLBbSRLE=", "i"=>""}
+
+ActionController::UnknownAction (No action responded to add_wish. Actions: create, new, search, and show):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 192.168.1.5 at 2010-05-21 01:51:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mGift Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `gifts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `gifts` WHERE (`gifts`.user_id = 1) [0m
+Rendered users/_gift_list (4.5ms)
+Rendered users/_add_wish (3.4ms)
+Rendered users/_user_bar (1.0ms)
+Completed in 49ms (View: 25, DB: 3) | 200 OK [http://gift.me/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add_wish (for 192.168.1.5 at 2010-05-21 01:51:53) [GET]
+  Parameters: {"i"=>"test"}
+
+ActionController::UnknownAction (No action responded to add_wish. Actions: create, new, search, and show):
+  
+
+Rendering rescues/layout (not_found)

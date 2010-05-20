@@ -5,10 +5,13 @@ class UsersController < ApplicationController
 
   # render new.rhtml
   def new
+    
     @user = User.new
+    
   end
  
   def create
+    
     logout_keeping_session!
     @user = User.new(params[:user])
     success = @user && @user.save
@@ -24,5 +27,23 @@ class UsersController < ApplicationController
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
       render :action => 'new'
     end
+    
+  end
+  
+  def search
+    @page_title = "Search for users"
+    @users = User.all(:conditions => ["login LIKE :name OR name LIKE :name", { :name => '%' + params[:q] + '%'}])
+    render :layout => false
+  end
+  
+  def show
+    @user = User.find(params['id'])
+    @gifts = @user.gifts
+    @is_me = @user.is_me?(self.current_user)
+  end
+  
+  def add_wish
+    user = self.current_user
+    @gift = Gift.new(params[:wish])
   end
 end

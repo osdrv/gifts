@@ -1,0 +1,11 @@
+<% form_tag(:search, :method => "GET", :id => "user_search_form") do %>
+  <%= label_tag(:q, "Search for user:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search!", :name => nil) %>
+<% end %>
+
+<div id='search_result'></div>
+
+<script type='text/javascript'>
+  search_user('<%= url_for :search %>')
+</script>

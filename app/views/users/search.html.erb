@@ -1,0 +1,9 @@
+<% if @users.empty? %>
+  No users found
+<% else %>
+  <ul>
+    <% @users.each do |user| %>
+      <li><%= link_to_user(user) %></li>
+    <% end %>
+  </ul>
+<% end %>

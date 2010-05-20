@@ -5,10 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<title><%= @page_title or 'Page Title' %></title>
-	<style type="text/css"><%= yield :stylesheets %></style> 
+	<%= stylesheet_link_tag 'style'  %>
+	<%= javascript_include_tag 'jq/jquery.js' %>
+	<%= javascript_include_tag 'jq/ui.js' %>
+	<%= javascript_include_tag 'jq/script.js' %>
 </head>
 
 <body>
+  <%= render :partial => "users/user_bar" %>
 
   <%= yield %>
 

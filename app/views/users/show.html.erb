@@ -1,0 +1,7 @@
+<h1><%= @user.login %></h1>
+
+<%= render :partial => "gift_list" %>
+
+<% if @is_me %>
+  <%= render :partial => "add_wish" %>
+<% end %>

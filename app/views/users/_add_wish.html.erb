@@ -1,0 +1,9 @@
+<% form_tag(:add_wish, :method => "POST", :id => "add_wish_form") do %>
+  <%= label_tag(:i, "Add a new item to list:") %>
+  <%= text_field_tag(:i) %>
+  <%= submit_tag(" + ", :name => nil) %>
+<% end %>
+
+<script type='text/javascript'>
+  add_wish('<%= url_for :add_wish %>')
+</script>

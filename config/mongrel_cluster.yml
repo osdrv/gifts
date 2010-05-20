@@ -1,0 +1,10 @@
+--- 
+user: www-data
+cwd: /home/oleg/workspace/gift.me
+log_file: log/mongrel.log
+port: "8002"
+environment: development
+group: www-data
+address: 192.168.1.10
+pid_file: log/mongrel.pid
+servers: 1

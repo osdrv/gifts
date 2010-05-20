@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pic_url: MyString
+  name: MyString
+  access: 1
+  state: 1
+  user: 
+
+two:
+  pic_url: MyString
+  name: MyString
+  access: 1
+  state: 1
+  user: 

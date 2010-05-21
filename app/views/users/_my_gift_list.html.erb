@@ -3,7 +3,7 @@
     <li class="empty"><%= @user.login %> haven't added any wishes in his list</li>
   <% else %>
     <% @gifts.each do |gift| %>
-      <%= render :partial => 'gift_list_item', :gift => gift %>
+      <%= render :partial => 'my_gift_list_item', :object => gift %>
     <% end %>
   <% end %>
 </ul>

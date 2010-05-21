@@ -29,7 +29,7 @@ function search_user(_p1) {
   })
 }
 
-function add_wish(_p1) {
+function add_wish() {
   
   $(function() {
     
@@ -37,7 +37,12 @@ function add_wish(_p1) {
       
       _ev.preventDefault();
       
-      var _val = $('#i').val();
+      var _name = $('#gift_name'),
+      _val = _name.val(),
+      _url = $(this).attr('action'),
+      _data = {};
+      
+      _data[_name.attr('name')] = _val;
       
       if (!_val) {
         
@@ -45,15 +50,15 @@ function add_wish(_p1) {
       }
       
       $.ajax({
-        type: "GET",
-        data: { 'i': _val },
-        url: _p1,
+        type: "POST",
+        data: _data,
+        url: _url,
         complete: function() {
           
         },
         success: function(_d) {
           
-          $('#gift_list').find('li.empty').append.html(_d);
+          $('#gift_list').find('li.empty').remove().end().append(_d);
         }
       })
     });

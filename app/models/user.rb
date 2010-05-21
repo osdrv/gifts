@@ -38,7 +38,11 @@ class User < ActiveRecord::Base
     u = find_by_login(login.downcase) # need to get the salt
     u && u.authenticated?(password) ? u : nil
   end
-
+  
+  def self.search_like(name)
+    self.all(:conditions => ["login LIKE :name OR name LIKE :name", { :name => '%' + name + '%'}])
+  end
+  
   def login=(value)
     write_attribute :login, (value ? value.downcase : nil)
   end

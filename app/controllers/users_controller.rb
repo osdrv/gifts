@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   
   def search
     @page_title = "Search for users"
-    @users = User.all(:conditions => ["login LIKE :name OR name LIKE :name", { :name => '%' + params[:q] + '%'}])
+    @users = User.search_like(params[:q])
     render :layout => false
   end
   
@@ -40,10 +40,18 @@ class UsersController < ApplicationController
     @user = User.find(params['id'])
     @gifts = @user.gifts
     @is_me = @user.is_me?(self.current_user)
+    @page_title = @user.login + "'s wishlist"
+    @new_gift = Gift.new
   end
   
   def add_wish
     user = self.current_user
-    @gift = Gift.new(params[:wish])
+    @gift = Gift.new(params[:gift])
+    @gift.user_id = self.current_user.id
+    success = @gift && @gift.save
+    render :layout => false
+    #if success
+      
+    #end
   end
 end

@@ -59,6 +59,7 @@ function add_wish() {
         success: function(_d) {
           
           $('#gift_list').find('li.empty').remove().end().append(_d);
+          _name.val('');
         }
       })
     });

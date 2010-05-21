@@ -1,9 +1,7 @@
 <ul id="gift_list">
   <% if @gifts.empty? %>
-    <li class="empty"><%= @user.login %> haven't added any wishes in his list</li>
+    <li class="empty">You haven't added any wishes in your list</li>
   <% else %>
-    <% @gifts.each do |gift| %>
-      <%= render :partial => 'my_gift_list_item', :object => gift %>
-    <% end %>
+    <%= render :partial => 'my_gift_list_item', :collection => @gifts %>
   <% end %>
 </ul>

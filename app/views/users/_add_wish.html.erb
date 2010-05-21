@@ -1,7 +1,17 @@
 <% form_for :gift, @new_gift, :url => { :action => "add_wish" }, :html => { :id => "add_wish_form" } do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit " + " %>
+  <ul class="add_wish_form_ul">
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :access %>
+      <%= select_tag(:access, options_for_select([["public", 1], ["friends", 2], ["private", 3]])) %>
+    </li>
+    <li>
+      <%= f.submit " + " %>
+    </li>
+  </ul>
 <% end %>
 
 <script type='text/javascript'>

@@ -33,16 +33,24 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(params['id'])
-    @gifts = @user.gifts
+    if params[:id]
+      @user = User.find(params[:id])
+    elsif params[:login]
+      @user = User.find_by_name(params[:login])
+    end
     @is_me = @user.is_me?(self.current_user)
+    if (@is_me)
+      @gifts = @user.gifts
+    else
+      @is_friend = @user.is_friend?(self.current_user)
+      @gifts = @user.public_gifts(self.current_user)
+    end
     @page_title = @user.login + "'s wishlist"
     @new_gift = Gift.new
   end
   
   def add_wish
     user = self.current_user
-    
     @gift = Gift.new(params[:gift])
     @gift.name = Sanitize.clean(@gift.name, Sanitize::Config::BASIC)
     @gift.user_id = self.current_user.id

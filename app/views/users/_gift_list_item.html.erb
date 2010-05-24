@@ -1,1 +1,9 @@
-<li class="wish"><%= gift_list_item.name %></li>
+<li class="wish">
+  <a class="i-promise" href="javascript:void(0);">☺</a>
+  <span class="wish-label <%= get_state_class(gift_list_item) %>">
+    <%= gift_list_item.name %>
+    <sub>
+      (<%= distance_of_time_in_words_to_now(gift_list_item.created_at) %> ago)
+    </sub>
+  </span>
+</li>

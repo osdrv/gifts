@@ -6,7 +6,7 @@
     </li>
     <li>
       <%= f.label :access %>
-      <%= select_tag(:access, options_for_select([["public", 1], ["friends", 2], ["private", 3]])) %>
+      <%= select(:gift, :access, options_for_select([["public", 1], ["friends", 2], ["private", 3]])) %>
     </li>
     <li>
       <%= f.submit " + " %>

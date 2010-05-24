@@ -37,17 +37,22 @@ function add_wish() {
       
       _ev.preventDefault();
       
-      var _name = $('#gift_name'),
-      _val = _name.val(),
-      _url = $(this).attr('action'),
-      _data = {};
+      var _data = {},
+      _url = $(this).attr('action');
       
-      _data[_name.attr('name')] = _val;
-      
-      if (!_val) {
+      if (!$('#gift_name').val()) {
         
         return;
       }
+      
+      $(this).find('input, select, textarea').each(function(_i, _el) {
+        
+        var _el = $(_el), _name = _el.attr('name');
+
+        if (_name) {
+          _data[_name] = _el.val();
+        }
+      });
       
       $.ajax({
         type: "POST",
@@ -59,7 +64,7 @@ function add_wish() {
         success: function(_d) {
           
           $('#gift_list').find('li.empty').remove().end().append(_d);
-          _name.val('');
+          $('#gift_name').val('');
         }
       })
     });

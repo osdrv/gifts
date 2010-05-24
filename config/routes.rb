@@ -3,9 +3,12 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
+  
   map.resources :users
 
   map.resource :session
+  
+  map.user_name '/u/:login', :controller => 'users', :action => 'show', :requirements => { :login => /\w+/ }
   
   map.search '/search', :controller => 'users', :action => 'search'
   

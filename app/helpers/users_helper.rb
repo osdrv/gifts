@@ -49,9 +49,13 @@ module UsersHelper
     content_text      = options.delete(:content_text)
     content_text    ||= user.send(options.delete(:content_method))
     options[:title] ||= user.send(options.delete(:title_method))
-    link_to h(content_text), user_path(user), options
+    link_to h(content_text), url_for_user(user), options
   end
-
+  
+  def url_for_user(user)
+    user_name_url(:login => user.login)
+  end
+  
   #
   # Link to login page using remote ip address as link content
   #

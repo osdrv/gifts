@@ -26,7 +26,11 @@ class User < ActiveRecord::Base
   attr_accessible :login, :email, :name, :password, :password_confirmation
 
   has_many :gifts
-
+  
+  def to_s
+    self.login
+  end
+  
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   #
   # uff.  this is really an authorization, not authentication routine.  
@@ -43,6 +47,10 @@ class User < ActiveRecord::Base
     self.all(:conditions => ["login LIKE :name OR name LIKE :name", { :name => '%' + name + '%'}])
   end
   
+  def self.find_by_name(login)
+    self.first(:conditions => ["login = :login", { :login => login }])
+  end
+  
   def login=(value)
     write_attribute :login, (value ? value.downcase : nil)
   end
@@ -56,6 +64,22 @@ class User < ActiveRecord::Base
       return user.id == self.id
     end
     false
+  end
+  
+  def is_friend?(user)
+    if user.class.to_s == "User"
+      return true
+    else
+      return false
+    end
+  end
+  
+  def public_gifts(user)
+    if self.is_friend?(user)
+      return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id", { :user_id => self.id }])
+    else
+      return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id", { :user_id => self.id }])
+    end
   end
   
   protected

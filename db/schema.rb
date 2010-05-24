@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100520192701) do
+ActiveRecord::Schema.define(:version => 20100524202429) do
 
   create_table "gifts", :force => true do |t|
     t.string   "pic_url"
     t.string   "name"
-    t.integer  "access"
+    t.integer  "access",     :default => 1, :null => false
     t.integer  "state"
     t.integer  "user_id"
     t.datetime "created_at"

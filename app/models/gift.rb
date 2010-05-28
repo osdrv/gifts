@@ -1,5 +1,7 @@
 class Gift < ActiveRecord::Base
   belongs_to :user
+  has_one :promise
+  
   validates_presence_of :name
   validates_length_of :name, :within => 3..255
   validates_presence_of :user_id

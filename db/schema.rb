@@ -9,14 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100524202429) do
+ActiveRecord::Schema.define(:version => 20100525052151) do
+
+  create_table "friends", :id => false, :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "friend_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "gifts", :force => true do |t|
     t.string   "pic_url"
     t.string   "name"
     t.integer  "access",     :default => 1, :null => false
-    t.integer  "state"
+    t.integer  "state",      :default => 0, :null => false
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "promises", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "gift_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,5 +1,7 @@
 <li class="wish">
-  <a class="i-promise" href="javascript:void(0);" title="I will gift it">☺</a>
+  <% if @is_friend %>
+    <a class="i-promise" href="javascript:void(0);" title="I will gift it">☺</a>
+  <% end %>
   <span class="wish-label <%= get_state_class(gift_list_item) %>">
     <%= gift_list_item.name %>
     <sub>

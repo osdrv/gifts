@@ -69,11 +69,20 @@ class User < ActiveRecord::Base
   end
   
   def is_friend?(user)
-    if user.class.to_s == "User"
+    if !@friends
+      @friends = {}
+    end
+    
+    if @friends[user.id]
       return true
     else
-      return false
+      if Friend.count(:conditions => ["(friends.user_id = :user_id AND friends.friend_id = :friend_id) OR (friends.user_id = :friend_id AND friends.friend_id = :user_id) AND friends.status = :status", { :user_id => self.id, :friend_id => user.id, :status => 1 }]) > 0
+        @friends[user.id] = true
+        return true
+      end
     end
+    
+    return false
   end
   
   def public_gifts(user)
@@ -82,6 +91,14 @@ class User < ActiveRecord::Base
     else
       return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id", { :user_id => self.id }])
     end
+  end
+  
+  def friendship_requests
+    User.all(:joins => 'INNER JOIN friends ON users.id = friends.friend_id', :conditions => ["friends.user_id = :user_id AND friends.status = :status", { :user_id => self.id, :status => 0 }])
+  end
+  
+  def friendship_requested?(user)
+    Friend.count(:conditions => ["(friends.user_id = :user_id AND friends.friend_id = :friend_id) OR (friends.user_id = :friend_id AND friends.friend_id = :user_id) AND friends.status = :status", { :user_id => self.id, :friend_id => user.id, :status => 0 }]) > 0
   end
   
   protected

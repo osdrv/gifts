@@ -41,6 +41,7 @@ class UsersController < ApplicationController
     @is_me = @user.is_me?(self.current_user)
     if (@is_me)
       @gifts = @user.gifts
+      @friendship_requests = @user.friendship_requests
     else
       @is_friend = @user.is_friend?(self.current_user)
       @gifts = @user.public_gifts(self.current_user)

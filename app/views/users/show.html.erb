@@ -1,8 +1,22 @@
 <% if @is_me %>
+  <% if @friendship_requests.size %>
+    <div class='friendship-requests'>
+      <% if @friendship_requests.size == 1 %>
+        <%= @friendship_requests[0].name %> sent you a friendship request.
+      <% else %>
+        
+      <% end %>
+    </div>
+  <% end %>
   <span class="h1">My wishlist</span>
   <%= render :partial => "my_gift_list" %>
   <%= render :partial => "add_wish" %>
 <% else %>
+  <div class='he-is-my-friend'>
+    <a href='javascript:void(0);'>
+      <%= @user.login %> is my friend!
+    </a>
+  </div>
   <span class="h1"><%= @user.login %>'s wishlist</span>
   <%= render :partial => "gift_list" %>
 <% end %>

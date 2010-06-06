@@ -1,22 +1,26 @@
 <% if @is_me %>
-  <% if @friendship_requests.size %>
-    <div class='friendship-requests'>
-      <% if @friendship_requests.size == 1 %>
-        <%= @friendship_requests[0].name %> sent you a friendship request.
-      <% else %>
-        
+  <% if @friendship_requests.size > 0 %>
+    <ul class='friendship-requests' id='friendship-requests-list'>
+      <li class='title'>New friendship requests:</li>
+      <% @friendship_requests.each do |req| %>
+        <li class='user' userid='<%= req.id %>'>
+          <a href='javascript:void(0);' title='Start to be friends with <%= req.login %>' class='allow'>✔</a>
+          <a href='javascript:void(0);' title='Decline <%= req.login %>s friendship request' class='decline'>✖</a>
+          <a href='javascript:void(0);' title='Start to be friends with <%= req.login %>' class='allow'><%= req.login %></a>
+        </li>
       <% end %>
-    </div>
+    </ul>
   <% end %>
   <span class="h1">My wishlist</span>
   <%= render :partial => "my_gift_list" %>
   <%= render :partial => "add_wish" %>
 <% else %>
-  <div class='he-is-my-friend'>
-    <a href='javascript:void(0);'>
-      <%= @user.login %> is my friend!
-    </a>
-  </div>
+  <%= render :partial => "friends/friendship" %>
   <span class="h1"><%= @user.login %>'s wishlist</span>
   <%= render :partial => "gift_list" %>
 <% end %>
+
+<script type='text/javascript'>
+  friendship_requests('<%= url_for :friendship %>')
+  request_friendship('<%= url_for :friendship %>', <%= @user.id %>);
+</script>

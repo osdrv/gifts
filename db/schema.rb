@@ -9,14 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100603193346) do
+ActiveRecord::Schema.define(:version => 20100606184051) do
 
-  create_table "friends", :id => false, :force => true do |t|
+  create_table "friends", :force => true do |t|
     t.integer  "user_id"
     t.integer  "friend_id"
+    t.integer  "status",     :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "status",     :default => 0
   end
 
   create_table "gifts", :force => true do |t|

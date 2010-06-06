@@ -70,3 +70,61 @@ function add_wish() {
     });
   })
 }
+
+function request_friendship(_url, _user_id) {
+  
+  $(function() {
+    $('#request-frienship').click(function() {
+      var self = this;
+      $(self).html('loading...');
+      $.ajax({
+        type: 'POST',
+        url: _url,
+        data: { user_id: _user_id },
+        success: function(_r) {
+          $(self).html('request sent!')
+        },
+        complete: function() {
+          
+        }
+      })
+    })
+  })
+}
+
+function friendship_requests(_url) {
+  
+  $('#friendship-requests-list').find('a.allow').click(function(_ev) {
+    _ev.preventDefault();
+    var _a = $(this), _li = _a.closest('li'), _user_id = _li.attr('userid');
+    
+    $.ajax({
+      type: 'PUT',
+      url: _url,
+      data: { user_id: _user_id },
+      success: function(_r) {
+        if (!_li.siblings('li.user:visible').length) {
+          _li.parent().fadeOut()
+        } else {
+          _li.fadeOut();
+        }
+      }
+    })
+  }).end().find('a.decline').click(function(_ev) {
+    _ev.preventDefault();
+    var _a = $(this), _li = _a.closest('li'), _user_id = _li.attr('userid');
+    
+    $.ajax({
+      type: 'DELETE',
+      url: _url,
+      data: { user_id: _user_id },
+      success: function(_r) {
+        _li.fadeOut(function() {
+          if (!_li.siblings('li.user:visible').length) {
+            _li.parent().fadeout()
+          }
+        });
+      }
+    })
+  })
+}

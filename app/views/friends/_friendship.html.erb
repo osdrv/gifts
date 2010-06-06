@@ -1,0 +1,11 @@
+<% if !@is_friend %>
+  <div class='he-is-my-friend'>
+    <a href='javascript:void(0);' id='request-frienship'>
+      <%= @user.login %> is my friend!
+    </a>
+  </div>
+<% else %>
+  <div class='he-is-my-friend'>
+    <%= @user.login %> is your friend!
+  </div>
+<% end %>

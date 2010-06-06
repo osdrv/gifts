@@ -76,7 +76,8 @@ class User < ActiveRecord::Base
     if @friends[user.id]
       return true
     else
-      if Friend.count(:conditions => ["(friends.user_id = :user_id AND friends.friend_id = :friend_id) OR (friends.user_id = :friend_id AND friends.friend_id = :user_id) AND friends.status = :status", { :user_id => self.id, :friend_id => user.id, :status => 1 }]) > 0
+      count = Friend.count(:conditions => ["((friends.user_id = :user_id AND friends.friend_id = :friend_id) OR (friends.user_id = :friend_id AND friends.friend_id = :user_id)) AND friends.status = :status", { :user_id => self.id, :friend_id => user.id, :status => 1 }])
+      if count > 0
         @friends[user.id] = true
         return true
       end
@@ -89,7 +90,16 @@ class User < ActiveRecord::Base
     if self.is_friend?(user)
       return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id", { :user_id => self.id }])
     else
-      return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id", { :user_id => self.id }])
+      return Gift.all(:conditions => ["access = 1 AND user_id = :user_id", { :user_id => self.id }])
+    end
+  end
+  
+  def request_friendship(user)
+    if !self.friendship_requested?(user)
+      f = Friend.new
+      f.user_id = self.id
+      f.friend_id = user.id
+      f.save
     end
   end
   

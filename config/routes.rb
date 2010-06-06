@@ -14,6 +14,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.add_wish '/add_wish', :controller => 'users', :action => 'add_wish'
   
+  map.resource :friendship, :controller => 'friends'
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

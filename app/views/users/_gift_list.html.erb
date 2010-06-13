@@ -3,5 +3,6 @@
     <li class="empty"><%= @user.login %> haven't added any wishes in his list</li>
   <% else %>
     <%= render :partial => 'gift_list_item', :collection => @gifts %>
+    <script type='text/javascript'>mark_friend_wish('<%= url_for :wish %>')</script>
   <% end %>
 </ul>

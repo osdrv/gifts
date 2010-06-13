@@ -128,3 +128,52 @@ function friendship_requests(_url) {
     })
   })
 }
+
+function mark_friend_wish(_url) {
+  
+  $(function() {
+    $('#gift_list a.i-promise').click(function(_ev) {
+      _ev.preventDefault();
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.next('span');
+      $.ajax({
+        url: _url,
+        type: 'PUT',
+        data: { a: 'fp', i: _wish_id },
+        success: function(_r) {
+          _a.fadeOut();
+          _span.html('<span class="promised">' + _span.html() + '</span>');
+        }
+      });
+    })
+  })
+}
+
+function my_wish_list(_url) {
+  $(function() {
+    $('#gift_list a.checkout').click(function(_ev) {
+      _ev.preventDefault();
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.next('span');
+      $.ajax({
+        url: _url,
+        type: 'PUT',
+        data: { a: 'co', i: _wish_id },
+        success: function(_r) {
+          _a.fadeOut(); _a.siblings('a.edit').fadeOut();
+          _span.html('<span class="checkedout">' + _span.html() + '</span>');
+        }
+      });
+    });
+    $('#gift_list a.remove').click(function(_ev) {
+      _ev.preventDefault();
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _li = _a.closest('li');
+      $.ajax({
+        url: _url,
+        type: 'DELETE',
+        data: { i: _wish_id },
+        success: function(_r) {
+          _li.fadeOut(function() { _li.remove(); });
+        }
+      })
+    });
+  })
+}

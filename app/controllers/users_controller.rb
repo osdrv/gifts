@@ -49,18 +49,4 @@ class UsersController < ApplicationController
     @page_title = @user.login + "'s wishlist"
     @new_gift = Gift.new
   end
-  
-  def add_wish
-    user = self.current_user
-    @gift = Gift.new(params[:gift])
-    @gift.name = Sanitize.clean(@gift.name, Sanitize::Config::BASIC)
-    @gift.user_id = self.current_user.id
-    success = @gift && @gift.save
-    
-    render :layout => false
-    
-    if !success
-      render :nothing => true
-    end
-  end
 end

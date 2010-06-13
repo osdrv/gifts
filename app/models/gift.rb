@@ -13,4 +13,8 @@ class Gift < ActiveRecord::Base
   def done?
     return self.state == 2
   end
+  
+  def user
+    return User.find(self.user_id)
+  end
 end

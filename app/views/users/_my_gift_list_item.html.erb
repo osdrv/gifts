@@ -1,11 +1,15 @@
-<li class="wish">
-  <a href="javascript:void(0);" class="checkout" title="check out">✔</a>
+<li class="wish" i="<%= my_gift_list_item.id %>">
+  <% if !my_gift_list_item.done? %>
+    <a href="javascript:void(0);" class="checkout" title="check out">✔</a>
+  <% end %>
   <a href="javascript:void(0);" class="remove" title="remove">✖</a>
   <span class="wish-label <%= get_state_class(my_gift_list_item) %>">
     <%= my_gift_list_item.name %>
-    <sub>
+    <span class="time-distance">
       (<%= distance_of_time_in_words_to_now(my_gift_list_item.created_at) %> ago)
-    </sub>
+    </span>
   </span>
-  <a href="javascript:void(0);" class="edit" title="edit">✏</a>
+  <% if !my_gift_list_item.done? %>
+    <a href="javascript:void(0);" class="edit" title="edit">✏</a>
+  <% end %>
 </li>

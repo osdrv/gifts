@@ -12,9 +12,10 @@ ActionController::Routing::Routes.draw do |map|
   
   map.search '/search', :controller => 'users', :action => 'search'
   
-  map.add_wish '/add_wish', :controller => 'users', :action => 'add_wish'
+  #map.add_wish '/add_wish', :controller => 'users', :action => 'add_wish'
   
   map.resource :friendship, :controller => 'friends'
+  map.resource :wish, :controller => 'wishes'
   
   # The priority is based upon order of creation: first created -> highest priority.
 

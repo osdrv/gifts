@@ -1,5 +1,5 @@
 <li class="wish" i="<%= gift_list_item.id %>">
-  <% if @is_friend && !gift_list_item.promised? %>
+  <% if @is_friend && !gift_list_item.promised? && !gift_list_item.done? %>
     <a class="i-promise" href="javascript:void(0);" title="I will gift it">☺</a>
   <% end %>
   <span class="wish-label <%= get_state_class(gift_list_item) %>">

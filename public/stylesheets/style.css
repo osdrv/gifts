@@ -1,0 +1,5 @@
+body { margin: 0; padding: 10px; font: 14px Arial,Helvetica,"Nimbus Sans L",sans-serif; }
+.done { color: #A0A0A0;}
+.promised { color: #313131; text-decoration: underline; }
+#gift_list ul { padding-left: 0; margin-left: 0; }
+#gift_list li { list-style-type: none; padding: 5px 0; }

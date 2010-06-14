@@ -132,16 +132,16 @@ function friendship_requests(_url) {
 function mark_friend_wish(_url) {
   
   $(function() {
-    $('#gift_list a.i-promise').click(function(_ev) {
+    $('#gift_list a.i-promise').live('click', function(_ev) {
       _ev.preventDefault();
-      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.next('span');
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.nextAll('span');
       $.ajax({
         url: _url,
         type: 'PUT',
         data: { a: 'fp', i: _wish_id },
         success: function(_r) {
           _a.fadeOut();
-          _span.html('<span class="promised">' + _span.html() + '</span>');
+          _span.addClass('promised');
         }
       });
     })
@@ -150,20 +150,20 @@ function mark_friend_wish(_url) {
 
 function my_wish_list(_url) {
   $(function() {
-    $('#gift_list a.checkout').click(function(_ev) {
+    $('#gift_list a.checkout').live('click', function(_ev) {
       _ev.preventDefault();
-      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.next('span');
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.nextAll('span');
       $.ajax({
         url: _url,
         type: 'PUT',
         data: { a: 'co', i: _wish_id },
         success: function(_r) {
           _a.fadeOut(); _a.siblings('a.edit').fadeOut();
-          _span.html('<span class="checkedout">' + _span.html() + '</span>');
+          _span.addClass('done');
         }
       });
     });
-    $('#gift_list a.remove').click(function(_ev) {
+    $('#gift_list a.remove').live('click', function(_ev) {
       _ev.preventDefault();
       var _a = $(this), _wish_id = _a.closest('li').attr('i'), _li = _a.closest('li');
       $.ajax({

@@ -1,5 +1,15 @@
-body { margin: 0; padding: 10px; font: 14px Arial,Helvetica,"Nimbus Sans L",sans-serif; }
-.done { color: #A0A0A0;}
-.promised { color: #313131; text-decoration: underline; }
-#gift_list ul { padding-left: 0; margin-left: 0; }
-#gift_list li { list-style-type: none; padding: 5px 0; }
+body { margin: 0; padding: 10px; font: 14px Arial,Helvetica,"Nimbus Sans L",sans-serif; color: #000;}
+a { color: #808080; text-decoration:none;}
+span.h1 { font-size: 36px;}
+#user-bar-greeting { float:left; margin-right: 10px;}
+
+.done { color: #34C924;}
+.promised { color: #008CF0; }
+
+#gift_list ul, ul.add_wish_form_ul { padding-left: 0; margin-left: 0; }
+#gift_list li, ul.add_wish_form_ul li { list-style-type: none; padding: 5px 0; }
+
+ul.add_wish_form_ul { border: 1px dotted #B0B0B0; padding:10px;}
+ul.add_wish_form_ul li { margin-left:25px; }
+
+.cancel, .apply { width: 20px; font-size: 32px; }

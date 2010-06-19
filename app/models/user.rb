@@ -69,6 +69,9 @@ class User < ActiveRecord::Base
   end
   
   def is_friend?(user)
+    if !user
+      return false
+    end
     if !@friends
       @friends = {}
     end
@@ -99,6 +102,9 @@ class User < ActiveRecord::Base
   end
   
   def request_friendship(user)
+    if !user
+      return
+    end
     if !self.friendship_requested?(user)
       f = Friend.new
       f.user_id = self.id

@@ -43,10 +43,17 @@ class UsersController < ApplicationController
       @gifts = @user.gifts
       @friendship_requests = @user.friendship_requests
     else
-      @is_friend = @user.is_friend?(self.current_user)
+      if !self.current_user
+        @is_friend = false
+        @is_anonimous = true
+      else
+        @is_friend = @user.is_friend?(self.current_user)
+        @is_anonimous = false
+      end
       @gifts = @user.public_gifts(self.current_user)
     end
     @page_title = @user.login + "'s wishlist"
     @new_gift = Gift.new
+    @form_id = "add_wish_form"
   end
 end

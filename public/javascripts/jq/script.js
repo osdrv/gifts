@@ -150,7 +150,8 @@ function mark_friend_wish(_url) {
 
 function my_wish_list(_url) {
   $(function() {
-    $('#gift_list a.checkout').live('click', function(_ev) {
+    var _gift_list = $('#gift_list');
+    $('a.checkout', _gift_list).live('click', function(_ev) {
       _ev.preventDefault();
       var _a = $(this), _wish_id = _a.closest('li').attr('i'), _span = _a.nextAll('span');
       $.ajax({
@@ -163,7 +164,7 @@ function my_wish_list(_url) {
         }
       });
     });
-    $('#gift_list a.remove').live('click', function(_ev) {
+    $('a.remove', _gift_list).live('click', function(_ev) {
       _ev.preventDefault();
       var _a = $(this), _wish_id = _a.closest('li').attr('i'), _li = _a.closest('li');
       $.ajax({
@@ -175,5 +176,58 @@ function my_wish_list(_url) {
         }
       })
     });
+    $('a.edit', _gift_list).live('click', function(_ev) {
+      _ev.preventDefault();
+      var _a = $(this), _wish_id = _a.closest('li').attr('i'), _li = _a.closest('li');
+      $.ajax({
+        url: _url,
+        type: 'GET',
+        data: { i: _wish_id },
+        success: function(_r) {
+          $(_r).insertAfter(_li.hide());
+        }
+      })
+    });
+    $("#edit_wish_form").live('submit', function(_ev) {
+      _ev.preventDefault();
+      _ev.stopPropagation();
+      var _data = {}, _li = $(this).closest('li'), _original_li = _li.prev('li');
+      $(this).find('input, select, textarea').each(function(_i, _el) {
+        _el = $(_el);
+        var _name;
+        if (_name = _el.attr('name')) {
+          _data[_name] = _el.val();
+        }
+      });
+      if ($.isEmptyObject(_data)) {
+        return;
+      }
+      $.ajax({
+        url: _url,
+        type: 'PUT',
+        data: { i: _id, a: 'upd', d: _data },
+        success: function(_r) {
+          _li.replaceWidth(_r);
+          _original_li.remove();
+        }
+      })
+    });
+    $('.cancel', _gift_list).live('click', function(_ev) {
+      _ev.preventDefault();
+      var _li = $(this).closest('li'), _original_li = _li.prev('li');
+      _original_li.show(); _li.remove();
+    });
+    $('.apply', _gift_list).live('click', function(_ev) {
+      _ev.preventDefault();
+      $(this).closest('li').children('form').submit();
+    });
   })
 }
+
+$(function() {
+  var _notice = $('#notice-bar');
+  _notice.ajaxError(function(_ev, _xhr, _opts, _err) {
+    _notice.addClass('error').html('<span class="status">' + _xhr.status + '</span>' + _xhr.responseText).fadeIn();
+    window.setInterval(function() { _notice.fadeOut() }, 2500);
+  })
+})

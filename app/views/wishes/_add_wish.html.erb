@@ -1,10 +1,11 @@
-<% form_for :gift, @new_gift, :url => url_for(:wish), :html => { :id => "add_wish_form" } do |f| %>
-  <ul class="add_wish_form_ul">
-    <li>
+<% form_for :gift, @new_gift, :url => url_for(:wish), :html => { :id => @form_id } do |f| %>
+    <ul class="add_wish_form_ul">
+    <li style="float:left;">
+      <%= f.hidden_field :id %>
       <%= f.label :name %>
       <%= f.text_field :name %>
     </li>
-    <li>
+    <li style="float:left;">
       <%= f.label :access %>
       <%= select(:gift, :access, options_for_select([["public", 1], ["friends", 2], ["private", 3]])) %>
     </li>

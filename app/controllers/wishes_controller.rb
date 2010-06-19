@@ -3,7 +3,10 @@ class WishesController < ApplicationController
   include AuthenticatedSystem
   
   def create
-    user = self.current_user
+    if !self.current_user
+      render :status => 401, :text => "Authorization required"
+      return
+    end
     @gift = Gift.new(params[:gift])
     @gift.name = Sanitize.clean(@gift.name, Sanitize::Config::BASIC)
     @gift.user_id = self.current_user.id
@@ -18,11 +21,30 @@ class WishesController < ApplicationController
   
   def edit
     user = self.current_user
-    gift = Gift.find(params[:i])
+    gift = Gift.find(params['i'])
     if !gift
       render :status => 500, :text => "gift is not defined"
     end
     
+  end
+  
+  def show
+    if !self.current_user
+      render :status => 401, :text => "Authorization required"
+      return
+    end
+    wish = Gift.find(params['i'])
+    if !wish
+      render :status => 404, :text => "Item not found"
+      return
+    end
+    if !(wish.user_id == self.current_user.id)
+      render :status => 403, :text => "You are not allowed to edit this item"
+      return
+    end
+    @new_gift = wish
+    @form_id = "edit_wish_form"
+    render :partial => "wishes/edit_wish"
   end
   
   def update

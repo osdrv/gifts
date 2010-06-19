@@ -13,7 +13,7 @@
   <% end %>
   <span class="h1">My wishlist</span>
   <%= render :partial => "my_gift_list" %>
-  <%= render :partial => "add_wish" %>
+  <%= render :partial => "wishes/add_wish" %>
 <% else %>
   <%= render :partial => "friends/friendship" %>
   <span class="h1"><%= @user.login %>'s wishlist</span>

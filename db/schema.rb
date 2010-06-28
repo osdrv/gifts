@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100606184051) do
+ActiveRecord::Schema.define(:version => 20100627183719) do
 
   create_table "friends", :force => true do |t|
     t.integer  "user_id"
@@ -20,13 +20,21 @@ ActiveRecord::Schema.define(:version => 20100606184051) do
   end
 
   create_table "gifts", :force => true do |t|
-    t.string   "pic_url"
     t.string   "name"
     t.integer  "access",     :default => 1, :null => false
     t.integer  "state",      :default => 0, :null => false
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "image_id"
+  end
+
+  create_table "images", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_name"
+    t.integer  "user_id"
   end
 
   create_table "promises", :force => true do |t|

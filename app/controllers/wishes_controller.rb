@@ -7,9 +7,39 @@ class WishesController < ApplicationController
       render :status => 401, :text => "Authorization required"
       return
     end
-    @gift = Gift.new(params[:gift])
+    
+    data = params[:gift]
+    
+    
+    # if (file = params[:gift][:image])
+    #       File.open(Rails.root.join('public', 'uploads', self.current_user.id.to_s, file.original_filename), 'w') do |f|
+    #         f.write(file.read)
+    #       end
+    #       f = Image.new(:file_name => file.original_filename, :user_id => self.current_user.id)
+    #       if f.save
+    #         data[:image_id] = f.id
+    #       end
+    #       data.delete(:image)
+    #     end
+    
+    if data[:id] != ''
+      @gift = Gift.find(data[:id])
+      if !@gift
+        render :status => 404, :text => "Item not found"
+        return
+      end
+      if !(@gift.user_id == self.current_user.id)
+        render :status => 403, :text => "You are not allowed to edit this item"
+        return
+      end
+      id = data.delete(:id)
+      Gift.update(id, data)
+      @gift = Gift.find(id)
+    else
+      @gift = Gift.new(params[:gift])
+      @gift.user_id = self.current_user.id
+    end
     @gift.name = Sanitize.clean(@gift.name, Sanitize::Config::BASIC)
-    @gift.user_id = self.current_user.id
     success = @gift && @gift.save
     
     render :layout => false
@@ -21,7 +51,7 @@ class WishesController < ApplicationController
   
   def edit
     user = self.current_user
-    gift = Gift.find(params['i'])
+    gift = Gift.find(params[:i])
     if !gift
       render :status => 500, :text => "gift is not defined"
     end
@@ -33,7 +63,7 @@ class WishesController < ApplicationController
       render :status => 401, :text => "Authorization required"
       return
     end
-    wish = Gift.find(params['i'])
+    wish = Gift.find(params[:i])
     if !wish
       render :status => 404, :text => "Item not found"
       return
@@ -48,8 +78,8 @@ class WishesController < ApplicationController
   end
   
   def update
-    action = params['a']
-    wish_id = params['i']
+    action = params[:a]
+    wish_id = params[:i]
     begin
       if !self.current_user.id
         raise "authorization required"

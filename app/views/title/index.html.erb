@@ -1,1 +1,14 @@
 <%= render :partial => "find_user" %>
+<span class="h1">GiftMe.IT: Your very own wishlists : )</span>
+<% if @recent_wishes.size %>
+  <%= render :partial => "wishes/recent_wishes"%>
+<% end %>
+<% if @current_user_id %>
+  <div class="my-wish-list">
+    <a href="<%= url_for_user(@current_user) %>">
+      My wishlist →
+    </a>
+  </div>
+<% else %>
+  <%= render :partial => "users/login" %>
+<% end %>

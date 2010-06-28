@@ -9,12 +9,15 @@
 	<%= javascript_include_tag 'jq/jquery.js' %>
 	<%= javascript_include_tag 'jq/ui.js' %>
 	<%= javascript_include_tag 'jq/script.js' %>
+	<%= javascript_include_tag 'jq/ui.gift_list.js' %>
+	<%= javascript_include_tag 'jq/jquery.smart_input.js' %>
+	<%= javascript_include_tag 'sup/swfupload_fp10/swfupload.js' %>
+	<%= javascript_include_tag 'sup/plugins/swfupload.cookies.js' %>
 </head>
 
 <body>
   <%= render :partial => "users/user_bar" %>
   <div id='notice-bar' style='display: none;'></div>
   <%= yield %>
-
 </body>
 </html>

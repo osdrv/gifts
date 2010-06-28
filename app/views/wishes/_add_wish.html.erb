@@ -1,18 +1,21 @@
-<% form_for :gift, @new_gift, :url => url_for(:wish), :html => { :id => @form_id } do |f| %>
-    <ul class="add_wish_form_ul">
-    <li style="float:left;">
+<% form_for :gift, @new_gift, :url => url_for(:wish), :html => { :id => @form_id, :multipart => true, :target => "null-frame" } do |f| %>
+  <div class="add_wish_form_ul">
+    <span>
+      <%= f.file_field :image %>
+    </span>
+    <span>
       <%= f.hidden_field :id %>
       <%= f.label :name %>
       <%= f.text_field :name %>
-    </li>
-    <li style="float:left;">
+    </span>
+    <span>
       <%= f.label :access %>
-      <%= select(:gift, :access, options_for_select([["public", 1], ["friends", 2], ["private", 3]])) %>
-    </li>
-    <li>
-      <%= f.submit " + " %>
-    </li>
-  </ul>
+      <%= select(:gift, :access, options_for_select([["public", 1], ["friends", 2], ["private", 3]], @new_gift.access)) %>
+    </span>
+    <span>
+      <%= f.submit "save" %>
+    </span>
+  </div>
 <% end %>
 
 <script type='text/javascript'>add_wish()</script>

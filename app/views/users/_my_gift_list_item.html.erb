@@ -1,8 +1,5 @@
 <li class="wish" i="<%= my_gift_list_item.id %>">
-  <% if !my_gift_list_item.done? %>
-    <a href="javascript:void(0);" class="checkout" title="check out">✔</a>
-  <% end %>
-  <a href="javascript:void(0);" class="remove" title="remove">✖</a>
+  <%= image_tag my_gift_list_item.image.url(:thumbnail) %>
   <span class="wish-label <%= get_state_class(my_gift_list_item) %>">
     <%= my_gift_list_item.name %>
     <span class="time-distance">
@@ -10,6 +7,10 @@
     </span>
   </span>
   <% if !my_gift_list_item.done? %>
+    <a href="javascript:void(0);" class="checkout" title="check out">✔</a>
+  <% end %>
+  <% if !my_gift_list_item.done? %>
     <a href="javascript:void(0);" class="edit" title="edit">✏</a>
   <% end %>
+  <a href="javascript:void(0);" class="remove" title="remove">✖</a>
 </li>

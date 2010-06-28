@@ -1,0 +1,23 @@
+<div class='recent_wishes'>
+  <span class='recent_wishes_header'>
+    Recent users wishes
+  </span>
+  <ul class='recent_wishes_list'>
+    <% i = 0 %>
+    <% @recent_wishes.each do |wish| %>
+      <% i += 1 %>
+      <li <% if i%2 == 0 %>class="odd"<% end%>>
+        <img src="/images/images.jpg" width="50" height="30" />
+        <%= wish.name %>
+        <span class="time-distance">
+          (<%= distance_of_time_in_words_to_now(wish.created_at) %> ago by <%= link_to_user(wish.user) %>)
+        </span>
+        <% if (wish.user.id != @current_user_id) %>
+          <div class="i_want_it_too">
+            <a title='I want it too!' href="javascript:void(0);"><i></i>★</a>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>

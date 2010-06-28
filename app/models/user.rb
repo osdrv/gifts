@@ -28,6 +28,7 @@ class User < ActiveRecord::Base
   has_many :gifts
   has_many :promises
   has_and_belongs_to_many :friends, :class_name => "User", :join_table => "friends", :foreign_key => "user_id", :association_foreign_key => "friend_id"
+  has_many :images
   
   def to_s
     self.login

@@ -7,21 +7,7 @@ class WishesController < ApplicationController
       render :status => 401, :text => "Authorization required"
       return
     end
-    
     data = params[:gift]
-    
-    
-    # if (file = params[:gift][:image])
-    #       File.open(Rails.root.join('public', 'uploads', self.current_user.id.to_s, file.original_filename), 'w') do |f|
-    #         f.write(file.read)
-    #       end
-    #       f = Image.new(:file_name => file.original_filename, :user_id => self.current_user.id)
-    #       if f.save
-    #         data[:image_id] = f.id
-    #       end
-    #       data.delete(:image)
-    #     end
-    
     if data[:id] != ''
       @gift = Gift.find(data[:id])
       if !@gift

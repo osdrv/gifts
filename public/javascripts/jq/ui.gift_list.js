@@ -103,7 +103,7 @@
       $(_o.edit, _e).live('click', function(_ev) { self._edit.call(_ev.target, _ev, _e, _o, self); });
       $(_o.li, _e).live('dblclick', function(_ev) { self._edit.call(_ev.target, _ev, _e, _o, self); });
       
-      $(_o.edit_form, _e).live('submit', function(_ev) { self._save.call(_ev.target, _ev, _e, _o, self); });
+      //$(_o.edit_form, _e).live('submit', function(_ev) { self._save.call(_ev.target, _ev, _e, _o, self); });
       
       $(_o.cancel, _e).live('click', function(_ev) { self._cancel.call(_ev.target, _ev, _e, _o, self); });
       

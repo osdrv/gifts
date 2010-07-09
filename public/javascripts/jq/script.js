@@ -43,8 +43,8 @@ function updateWishes(_body, _li_instead) {
   }
 }
 
-function add_wish() {
-  return;
+function add_wish(_upload_url) {
+
   $(function() {
     
     $('#add_wish_form').submit(function(_ev) {
@@ -82,26 +82,44 @@ function add_wish() {
         }
       })
     });
-    var _upl_params = {
-      upload_url: '',
-      file_post_name: 'file',
-      file_types: '*.jpg;*.jpeg;*.JPG;*.JPEG;*.Jpeg;*.Jpg;*.png;*.gif;*.PNG;*.GIF;*.Png;*.Gif',
-      file_queue_limit: '1',
-  		file_upload_limit: '0',
-      button_placeholder_id: 'add_foto',
-      button_image_url: '/images/images.jpg',
-      button_action: SWFUpload.BUTTON_ACTION.SELECT_FILES,
-      button_width: "50",
-      button_height: "30",
-      button_cursor: SWFUpload.CURSOR.HAND,
-      button_window_mode: 'opaque',
-      upload_start_handler: function(_f) {},
-      file_dialog_complete_handler: function(_cnt) {},
-      upload_success_handler: function() {},
-      upload_complete_handler: function() {}
-    }
-    //var _upl = new SWFUpload(_upl_params);
+    
+    var _upl = initUploader('add_foto', _upload_url);
   })
+}
+
+function initUploader(_id, _upload_url) {
+  
+  var _upl_params = {
+    upload_url: _upload_url,
+    file_post_name: 'file',
+    file_types: '*.jpg;*.jpeg;*.JPG;*.JPEG;*.Jpeg;*.Jpg;*.png;*.gif;*.PNG;*.GIF;*.Png;*.Gif',
+    file_queue_limit: '1',
+		file_upload_limit: '0',
+    button_placeholder_id: _id,
+    button_image_url: 'http://gift.me/images/chs_pic.png',
+    button_action: SWFUpload.BUTTON_ACTION.SELECT_FILES,
+    button_width: "50",
+    button_height: "30",
+    button_cursor: SWFUpload.CURSOR.HAND,
+    button_window_mode: 'opaque',
+    upload_start_handler: function(_f) {},
+    file_dialog_complete_handler: function(_cnt) {
+      if (_cnt) {
+        this.startUpload();
+      }
+    },
+    upload_success_handler: function(_f, _d, _resp) {
+      var _form = $('#add_wish_form').children('img').remove().end(),
+      _img = $('<img src="' + _d + '" />').prependTo(_form);
+    },
+    upload_complete_handler: function() {},
+    flash_url: "http://gift.me/javascripts/sup/swfupload_fp10/swfupload.swf",
+    debug: true
+  }
+  
+  _upl = new SWFUpload(_upl_params);
+  
+  return _upl;
 }
 
 function request_friendship(_url, _user_id) {

@@ -113,8 +113,8 @@ function initUploader(_id, _upload_url) {
       _img = $('<img src="' + _d + '" />').prependTo(_form);
     },
     upload_complete_handler: function() {},
-    flash_url: "http://gift.me/javascripts/sup/swfupload_fp10/swfupload.swf",
-    debug: true
+    flash_url: "http://gift.me/javascripts/sup/swfupload_fp10/swfupload.swf"
+    //debug: true
   }
   
   _upl = new SWFUpload(_upl_params);

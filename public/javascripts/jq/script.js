@@ -43,11 +43,15 @@ function updateWishes(_body, _li_instead) {
   }
 }
 
-function add_wish(_upload_url) {
+function add_wish(_upload_url, _sessid, _form_id) {
 
   $(function() {
     
-    $('#add_wish_form').submit(function(_ev) {
+    var _form = $('#' + _form_id),
+    _progressbar = _form.find('.progressbar').eq(0).progressbar({ value: 0 });
+    
+    
+    _form.submit(function(_ev) {
       
       _ev.preventDefault();
       
@@ -83,22 +87,23 @@ function add_wish(_upload_url) {
       })
     });
     
-    var _upl = initUploader('add_foto', _upload_url);
+    var _upl = initUploader('add_foto', _upload_url, _sessid, _progressbar, _form);
   })
 }
 
-function initUploader(_id, _upload_url) {
+function initUploader(_id, _upload_url, _sessid, _progressbar, _form) {
   
   var _upl_params = {
     upload_url: _upload_url,
+    post_params: { images_session: _sessid },
     file_post_name: 'file',
     file_types: '*.jpg;*.jpeg;*.JPG;*.JPEG;*.Jpeg;*.Jpg;*.png;*.gif;*.PNG;*.GIF;*.Png;*.Gif',
     file_queue_limit: '1',
 		file_upload_limit: '0',
     button_placeholder_id: _id,
-    button_image_url: 'http://gift.me/images/chs_pic.png',
+    button_image_url: 'http://gift.me/images/attachment.png',
     button_action: SWFUpload.BUTTON_ACTION.SELECT_FILES,
-    button_width: "50",
+    button_width: " 15",
     button_height: "30",
     button_cursor: SWFUpload.CURSOR.HAND,
     button_window_mode: 'opaque',
@@ -109,11 +114,32 @@ function initUploader(_id, _upload_url) {
       }
     },
     upload_success_handler: function(_f, _d, _resp) {
-      var _form = $('#add_wish_form').children('img').remove().end(),
-      _img = $('<img src="' + _d + '" />').prependTo(_form);
+      
+      try {
+        eval('var _res = ' + _d),
+        _pic_id = _res.id,
+        _pic_path = _res.path;
+      } catch (e) {
+        return;
+      }
+      _form.children('img').remove();
+      $('<img src="' + _pic_path + '" />').prependTo(_form);
+      _form.find('input[name*=image_id]').val(_pic_id);
     },
-    upload_complete_handler: function() {},
-    flash_url: "http://gift.me/javascripts/sup/swfupload_fp10/swfupload.swf"
+    upload_complete_handler: function() {
+      if (_progressbar instanceof jQuery) {
+        _progressbar.progressbar('value', 0);
+      }
+    },
+    flash_url: "http://gift.me/javascripts/sup/swfupload_fp10/swfupload.swf",
+    upload_progress_handler: function(_fo, _compl, _total) {
+      if (_total) {
+        var _percent = Math.round(100 * _compl / _total);
+        if (_progressbar instanceof jQuery) {
+          _progressbar.progressbar('value', _percent);
+        }
+      }
+    }
     //debug: true
   }
   

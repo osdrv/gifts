@@ -30,3 +30,6 @@ ul.add_wish_form_ul li { margin-left:25px; }
 .login_div { width: 300px; height: 200px; position: absolute; right: 0; bottom: 0; padding: 10px; border: 10px solid #C3DAEC; border-width: 10px 0 0 10px; -moz-border-radius-topleft: 20px; -webkit-border-top-left-radius: 20px;}
 .login_div.hidden {  }
 .login_div input { font-size: 32px; }
+.progressbar { width:50px; height:2px; display:block; }
+.ui-widget-header { background:url("/images/progress.png") repeat-x scroll 0 50% #FFFFFF; }
+.ui-progressbar-value { height:100%; margin:-1px; }

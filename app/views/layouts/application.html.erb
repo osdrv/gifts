@@ -6,11 +6,8 @@
 <head>
 	<title><%= @page_title or 'Page Title' %></title>
 	<%= stylesheet_link_tag 'style'  %>
-	<%= javascript_include_tag 'jq/jquery.js' %>
-	<%= javascript_include_tag 'jq/ui.js' %>
-	<%= javascript_include_tag 'jq/script.js' %>
-	<%= javascript_include_tag 'jq/ui.gift_list.js' %>
-	<%= javascript_include_tag 'jq/jquery.smart_input.js' %>
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js" type="text/javascript"></script>
+	<%= javascript_include_tag 'dojo/gift.me.js' %>
 	<%= javascript_include_tag 'sup/swfupload_fp10/swfupload.js' %>
 	<%= javascript_include_tag 'sup/plugins/swfupload.cookies.js' %>
 </head>

@@ -33,3 +33,5 @@ ul.add_wish_form_ul li { margin-left:25px; }
 .progressbar { width:50px; height:2px; display:block; }
 .ui-widget-header { background:url("/images/progress.png") repeat-x scroll 0 50% #FFFFFF; }
 .ui-progressbar-value { height:100%; margin:-1px; }
+a.wish-link { color:#000; text-decoration: none;}
+a.wish-link img {border: 0 none;}

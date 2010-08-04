@@ -1,5 +1,4 @@
 module GiftsHelper
-  
   def get_state_class(gift)
     if gift.promised?
       return "promised"
@@ -9,5 +8,4 @@ module GiftsHelper
       return ""
     end
   end
-  
 end

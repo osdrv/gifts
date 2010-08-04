@@ -19,11 +19,21 @@ class Gift < ActiveRecord::Base
     return User.find(self.user_id)
   end
   
-  def self.get_recent_wishes
-    Gift.all(:conditions => "access = 1 AND state >= 0", :order => "updated_at DESC", :limit => 10)
+  def self.get_recent_wishes(limit = 10)
+    Gift.all(:conditions => "access = 1 AND state >= 0", :order => "updated_at DESC", :limit => limit)
   end
   
   def owner_name
     self.user.login
+  end
+  
+  def image= (image)
+    self.image_id = image
+  end
+  
+  def image
+    if self.image_id
+      Image.find(self.image_id)
+    end
   end
 end

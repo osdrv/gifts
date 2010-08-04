@@ -77,11 +77,16 @@ function add_wish(_upload_url, _sessid, _form_id) {
         data: _data,
         url: _url,
         complete: function() {
-          
         },
         success: function(_d) {
-          
-          $('#gift_list').find('li.empty').remove().end().append(_d);
+          if (_data['gift[id]']) {
+            var _form_li = _form.closest('li');
+            _form_li.prev().remove();
+            _form_li.replaceWith(_d);
+          } else {
+            _form.find('img').eq(0).remove();
+            $('#gift_list').find('li.empty').remove().end().append(_d);
+          }
           $('#gift_name').val('');
         }
       })
@@ -140,7 +145,6 @@ function initUploader(_id, _upload_url, _sessid, _progressbar, _form) {
         }
       }
     }
-    //debug: true
   }
   
   _upl = new SWFUpload(_upl_params);

@@ -1,4 +1,7 @@
 <li class="wish" i="<%= gift_list_item.id %>">
+  <% if gift_list_item.image %>
+    <img src="<%= gift_list_item.image.image.url(:thumbnail) %>" alt="<%= gift_list_item.name %>" />
+  <% end %>
   <% if @is_friend && !gift_list_item.promised? && !gift_list_item.done? %>
     <a class="i-promise" href="javascript:void(0);" title="I will gift it">☺</a>
   <% end %>

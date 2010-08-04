@@ -1,0 +1,6 @@
+<h1>
+  <%= @gift.name %>
+</h1>
+<% if @gift.image %>
+  <img src="<%= @gift.image.image.url :big %>" alt="<%= @gift.name %>"/>
+<% end %>

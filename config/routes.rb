@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :gifts
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -9,6 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   
   map.user_name '/u/:login', :controller => 'users', :action => 'show', :requirements => { :login => /\w+/ }
+  map.user_wishes '/:login/wishes', :controller => 'gifts', :action => 'index', :requirements => { :login => /\w+/ }
   
   map.search '/search', :controller => 'users', :action => 'search'
   

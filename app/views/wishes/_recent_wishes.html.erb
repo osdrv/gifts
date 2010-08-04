@@ -7,7 +7,9 @@
     <% @recent_wishes.each do |wish| %>
       <% i += 1 %>
       <li <% if i%2 == 0 %>class="odd"<% end%>>
-        <img src="/images/images.jpg" width="50" height="30" />
+        <% if wish.image %>
+          <img src="<%= wish.image.image.url :thumbnail %>" alt="<%= wish.name %>"/>
+        <% end %>
         <%= wish.name %>
         <span class="time-distance">
           (<%= distance_of_time_in_words_to_now(wish.created_at) %> ago by <%= link_to_user(wish.user) %>)

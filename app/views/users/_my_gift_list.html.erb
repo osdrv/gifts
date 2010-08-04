@@ -1,3 +1,4 @@
+<div style='width:50%'>
 <ul id="gift_list">
   <% if @gifts.empty? %>
     <li class="empty">You haven't added any wishes in your list</li>
@@ -5,4 +6,7 @@
     <%= render :partial => 'my_gift_list_item', :collection => @gifts %>
   <% end %>
 </ul>
+</div>
+<div style='width:50%' id='wish-edit-div'>
+</div>
 <script type='text/javascript'>my_wish_list('<%= url_for :wish %>')</script>

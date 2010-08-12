@@ -91,14 +91,14 @@ class User < ActiveRecord::Base
   end
   
   def gifts
-    Gift.all(:conditions => ["user_id = :user_id AND state <> -1", { :user_id => self.id }])
+    Gift.all(:conditions => ["user_id = :user_id AND state <> -1", { :user_id => self.id }], :order => 'id desc')
   end
   
   def public_gifts(user)
     if self.is_friend?(user)
-      return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id AND state <> -1", { :user_id => self.id }])
+      return Gift.all(:conditions => ["access IN (1, 2) AND user_id = :user_id AND state <> -1", { :user_id => self.id }], :order => 'id desc')
     else
-      return Gift.all(:conditions => ["access = 1 AND user_id = :user_id AND state != -1", { :user_id => self.id }])
+      return Gift.all(:conditions => ["access = 1 AND user_id = :user_id AND state != -1", { :user_id => self.id }], :order => 'id desc')
     end
   end
   

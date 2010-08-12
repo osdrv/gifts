@@ -1,0 +1,29 @@
+ru:
+  gift_list: "Чего мне хочется"
+  edit_gift: "Редактирование"
+  new_gift: "И еще вот это"
+  datetime:
+    distance_in_words:
+      x_seconds: "%d секунд"
+      x_minutes: "%d минут"
+      x_hours: "%d часов"
+      x_days: "%d дней"
+      x_months: "%d месяцев"
+      about_x_seconds: "около %d секунд"
+      about_x_minutes: "около %d минут"
+      about_x_hours: "около %d часов"
+      about_x_days: "около %d дней"
+      about_x_months: "около %d месяцев"
+  ago: "назад"
+  new_wish: "Чего-то еще"
+  create: "Добавить"
+  logout: "Выйти"
+  login: "Войти"
+  signup: "Создать аккаунт"
+  public: "всем"
+  friends: "моим друзьям"
+  private: "только мне"
+  name: "описание"
+  access: "кому это показывать"
+  
+  

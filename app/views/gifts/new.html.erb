@@ -1,11 +1,32 @@
-<h1>New gift</h1>
+<h1><%=t :new_gift %>:</h1>
+
+<div id='uploaded-image'></div>
+<div id='uploaded-image-control'>
+  <div id='add_foto'></div>
+  <a style='display:none;' class='remove' href="javascript:void(0);" onclick="remove_gift_pic();"><span>✖</span></a>
+</div>
 
 <% form_for(@gift) do |f| %>
+  
   <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+  
+  <div style='clear: both;'>
+    <p>
+      <%= f.label t(:name) %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label t(:access) %>:
+      <%= select(:gift, :access, options_for_select([[t(:public), 1], [t(:friends), 2], [t(:private), 3]], @gift.access)) %>
+    </p>
+    <p>
+      <%= f.hidden_field :id %>
+      <%= f.hidden_field :image_id %>
+      <%= f.submit t :create %>
+    </p>
+  </div>
 <% end %>
 
-<%= link_to 'Back', gifts_path %>
+<script type='text/javascript'>
+  new_wish_js_001("<%= url_for :images %>", "<%= session.session_id.to_s %>")
+</script>

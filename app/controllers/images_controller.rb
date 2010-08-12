@@ -12,7 +12,7 @@ class ImagesController < ApplicationController
     if params[:file] && user_id
       image = Image.new(:image => params[:file], :user_id => user_id)
       if image.save()
-        response = JSON "path" => image.image.url(:thumbnail), "id" => image.id
+        response = JSON "path" => image.image.url(:big), "id" => image.id
         render :text => response
         return
       end

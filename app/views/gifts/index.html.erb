@@ -1,38 +1,41 @@
-<h1>Listing gifts</h1>
+<h1><%=t :gift_list %>:</h1>
 <div style="width:45%; float:left;">
-<% if @gifts %>
   <ul id='gift_list'>
-    <% @gifts.each do |gift| %>
-      <li class="wish" i="<%= gift.id %>">
-        <a href="#wish<%= gift.id %>" class='wish-link'>
-          <span>
-            <% if gift.image %>
-              <img src="<%= gift.image.image.url(:thumbnail) %>" alt="<%= gift.name %>" />
-            <% end %>
-            <span class="wish-label <%= get_state_class(gift) %>">
-              <%= gift.name %>
-              <span class="time-distance">
-                (<%= distance_of_time_in_words_to_now(gift.created_at) %> ago)
+    <% if @gifts %>
+      <% @gifts.each do |gift| %>
+        <li class="wish" i="<%= gift.id %>">
+          <a href="#wish<%= gift.id %>" link="<%= url_for gift %>" class='wish-link'>
+            <span>
+              <% if gift.image %>
+                <img src="<%= gift.image.image.url(:thumbnail) %>" alt="<%= gift.name %>" />
+              <% end %>
+              <span class="wish-label <%= get_state_class(gift) %>">
+                <%= gift.name %>
+                <span class="time-distance">
+                  (<%= distance_of_time_in_words_to_now(gift.created_at) %> <%=t :ago %>)
+                </span>
               </span>
             </span>
-          </span>
-        </a>
-      </li>
+          </a>
+        </li>
+      <% end %>
+    <% else %>
+      <span class='empty'>
+        You haven't add any record to your wishlist
+      </span>
     <% end %>
+    <li>
+      <a href="#create" link="<%= url_for new_gift_path %>">
+        <span>
+          <%=t :new_wish %>...
+        </span>
+      </a>
+    </li>
   </ul>
-<% else %>
-  <span class='empty'>
-    You haven't add any record to your wishlist
-  </span>
-<% end %>
 </div>
 
 <div id="gifts_details" style="width:45%; float:left;"></div>
 
-<br />
-
-<%= link_to 'New gift', new_gift_path %>
-
 <script type='text/javascript'>
-  _gifts_index_js("<%= url_for @gifts.last %>")
+  _gifts_index_js()
 </script>

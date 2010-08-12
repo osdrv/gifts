@@ -27,12 +27,9 @@ class GiftsController < ApplicationController
 
   def show
     @gift = Gift.find(params[:id])
-    if request.xhr?
-      render :layout => false, :content_type => 'text/html'
-      return
-    end
+    
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => false, :content_type => 'text/html' if request.xhr? }
       format.xml  { render :xml => @gift }
     end
   end
@@ -43,7 +40,7 @@ class GiftsController < ApplicationController
     @gift = Gift.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => false, :content_type => 'text/html' if request.xhr? }
       format.xml  { render :xml => @gift }
     end
   end
@@ -57,7 +54,7 @@ class GiftsController < ApplicationController
   # POST /gifts.xml
   def create
     @gift = Gift.new(params[:gift])
-
+    
     respond_to do |format|
       if @gift.save
         flash[:notice] = 'Gift was successfully created.'

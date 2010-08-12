@@ -7,7 +7,8 @@ span.h1 { font-size: 36px; }
 .promised { color: #008CF0; }
 
 #gift_list ul, ul.add_wish_form_ul { padding-left: 0; margin-left: 0; }
-#gift_list li, ul.add_wish_form_ul li, .search_result ul li, .recent_wishes_list li { list-style-type: none; padding: 5px 0; }
+#gift_list li, ul.add_wish_form_ul li, .search_result ul li, .recent_wishes_list li { list-style-type: none; padding: 5px 5px; }
+#gift_list li.active { background-color: #F0F0F0; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
 
 ul.add_wish_form_ul { border: 1px dotted #B0B0B0; padding:10px; }
 ul.add_wish_form_ul li { margin-left:25px; }

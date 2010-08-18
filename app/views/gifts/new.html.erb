@@ -6,23 +6,23 @@
   <a style='display:none;' class='remove' href="javascript:void(0);" onclick="remove_gift_pic();"><span>✖</span></a>
 </div>
 
-<% form_for(@gift) do |f| %>
+<% form_for @gift, :html => { :id => 'wish-form', :dojoType => 'dijit.form.Form' } do |f| %>
   
   <%= f.error_messages %>
   
   <div style='clear: both;'>
     <p>
       <%= f.label t(:name) %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, :required => 'true', :dojoType => 'dijit.form.ValidationTextBox' %>
     </p>
     <p>
       <%= f.label t(:access) %>:
       <%= select(:gift, :access, options_for_select([[t(:public), 1], [t(:friends), 2], [t(:private), 3]], @gift.access)) %>
     </p>
     <p>
-      <%= f.hidden_field :id %>
-      <%= f.hidden_field :image_id %>
-      <%= f.submit t :create %>
+      <%= f.hidden_field :id, :dojoType => 'dijit.form.TextBox' %>
+      <%= f.hidden_field :image_id, :dojoType => 'dijit.form.TextBox' %>
+      <%= f.submit t(:create), :dojoType => 'dijit.form.Button' %>
     </p>
   </div>
 <% end %>

@@ -3,6 +3,10 @@ dojo.require("dojo.NodeList-traverse");
 dojo.require("dojo.NodeList-manipulate");
 //dojo.require("dojox.form.FileUploader");
 //dojo.require("dojox.embed.Flash");
+dojo.require("dijit.form.Form");
+dojo.require("dijit.form.Button");
+dojo.require("dijit.form.ValidationTextBox");
+dojo.require('dojo.parser');
 
 
 function _gifts_index_js() {
@@ -57,6 +61,16 @@ function new_wish_js_001(_upload_url, _sessid) {
     };
     
     initUploader(_custom);
+    dojo.parser.parse();
+    var _form = dijit.byId('wish-form');
+    console.log(_form);
+    
+    dojo.connect(_form, "onSubmit", function(_ev) {
+      _ev.preventDefault();
+      if (_form.isValid()) {
+        console.log(dojo.toJson(_form.attr("value")));
+      }
+    });
     
   }, 500);
 }
